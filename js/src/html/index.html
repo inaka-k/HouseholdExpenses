@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/v-calendar/lib/v-calendar.min.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src='https://unpkg.com/v-calendar'></script>
+    <title>家計簿 | TOP</title>
+</head>
+
+<body>
+    <main class="index">
+        <div class="bg">
+            <img src="https://d1f5hsy4d47upe.cloudfront.net/79/79857a1193685112791775c6883a8761_t.jpeg" alt="">
+        </div>
+        <div id='app'>
+            <h1>かけいぼ</h1>
+            <v-calendar :attributes='attrs' is-expanded></v-calendar>
+        </div>
+        <div class="dialog-wrapper">
+            <div class="dialog">
+                <div class="dialog-header">
+                    <span>2020年4月28日</span>
+                    <span>✖</span>
+                </div>
+                <div class="dialog-body">
+                    <div class="item">
+                        <p class="category">マルショク</p>
+                        <p class="money">￥1,980</p>
+                        <div class="control-area">
+                            <span class="material-icons">
+                                create
+                            </span>
+                            <span class="material-icons">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="category">マルショク</p>
+                        <p class="money">￥1,980</p>
+                        <div class="control-area">
+                            <span class="material-icons">
+                                create
+                            </span>
+                            <span class="material-icons">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="category">マルショク</p>
+                        <p class="money">￥1,980</p>
+                        <div class="control-area">
+                            <span class="material-icons">
+                                create
+                            </span>
+                            <span class="material-icons">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="category">マルショク</p>
+                        <p class="money">￥1,980</p>
+                        <div class="control-area">
+                            <span class="material-icons">
+                                create
+                            </span>
+                            <span class="material-icons">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="category">マルショク</p>
+                        <p class="money">￥1,980</p>
+                        <div class="control-area">
+                            <span class="material-icons">
+                                create
+                            </span>
+                            <span class="material-icons">
+                                delete
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="text" name="category" class="category" placeholder="例：マルショク">
+                        <input type="text" name="money" class="money" placeholder="例：1980">
+                    </div>
+                    <div class="item">
+                        <select name="category" class="category">
+                            <option value="1">マルショク</option>
+                            <option value="2">ドラモリ</option>
+                            <option value="3">ジャスコ</option>
+                            <option value="4">ダイソー</option>
+                        </select>
+                        <input type="text" name="money" class="money" placeholder="例：1980">
+                    </div>
+                    <div class="item">
+                        <div class="plus-wrapper">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog-footer">
+                    <span class="submit-btn">登録</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>
+                <span>2020</span>年
+                <span>04</span>月
+            </p>
+            <p>月の総出費：<span class="out-money">￥110,000</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
